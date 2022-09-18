@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(39, 38, 38);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container {
+    height: 95vh;
+    width: 95vh;
+}
+.col {
+    display: flex;
+}
+.square {
+    background-color: aqua;
+    flex: 1;
+    transition: background-color 2s ease 0.4s, transform 0.8s ease;
+    transform: scale(1);
+}
+.square:hover {
+    background-color: rgb(5, 148, 148);
+    transition: background-color 0.2s ease;
+    transform: scale(1.04);
+}
+
+.input {
+    height: 95vh;
+    width: calc(59px * 6);
+}
+.grid-input {
+    color: white;
+    background-color: rgb(71, 57, 57);
+    height: 40px;
+    width: 60px;
+    margin: 2px;
+    transition: background-color 2s ease 0.4s, transform 0.8s ease;
+}
+.grid-input:hover {
+    background-color: rgb(99, 79, 79);
+    transition: background-color 0.2s ease;
+}
